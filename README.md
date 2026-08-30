@@ -118,3 +118,11 @@ This reference demo contains no production credentials or customer data and perf
 ## License
 
 MIT. See [LICENSE](./LICENSE).
+
+## Challenge submission package
+
+- [Judge quick test](./TESTING.md)
+- [Devpost submission copy](./SUBMISSION.md)
+- [Demo video script](./DEMO_SCRIPT.md)
+
+The required public YouTube video is the only submission artifact not stored here yet.
