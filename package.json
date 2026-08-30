@@ -1,0 +1,11 @@
+{
+  "name": "dmxready-agent-ready",
+  "version": "0.1.0",
+  "private": false,
+  "type": "module",
+  "scripts": {
+    "test": "node --test tests/*.test.mjs",
+    "check": "node --check app.js && node --check src/agent-ready.js && npm test"
+  },
+  "license": "MIT"
+}

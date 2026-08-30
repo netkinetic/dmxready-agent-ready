@@ -1,0 +1,178 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="color-scheme" content="dark" />
+  <meta name="description" content="DMXReady Agent Ready — a WebMCP reference Smart Website built for people and AI agents to use together." />
+  <link rel="icon" href="./favicon.svg" type="image/svg+xml" />
+  <title>DMXReady Agent Ready — WebMCP</title>
+  <link rel="stylesheet" href="./styles.css" />
+</head>
+<body>
+  <div class="page-shell">
+    <header class="site-header">
+      <a class="brand" href="#top" aria-label="DMXReady Agent Ready home">
+        <span class="brand-mark">DMX</span><span>Ready</span>
+        <span class="brand-tag">Agent Ready</span>
+      </a>
+      <div class="protocol-status" id="protocolStatus" data-state="checking">
+        <span class="status-dot"></span>
+        <span id="protocolStatusText">Checking WebMCP…</span>
+      </div>
+    </header>
+
+    <main id="top">
+      <section class="hero">
+        <div class="eyebrow">DMXReady × WebMCP Challenge</div>
+        <h1>Websites built for <span>people</span> and <span>AI agents</span> to use together.</h1>
+        <p class="hero-copy">This Smart Website exposes explicit, governed capabilities to an AI agent while keeping the human on the same page, looking at the same state, and in control of the next consequential step.</p>
+        <div class="hero-actions">
+          <a class="button primary" href="#workspace">Try the shared workspace</a>
+          <a class="button secondary" href="https://dmxready.com/smart-websites">About Smart Websites</a>
+        </div>
+        <div class="principles" aria-label="Agent Ready principles">
+          <span>One website truth</span><span>Shared visible state</span><span>Governed actions</span><span>Human approval</span>
+        </div>
+      </section>
+
+      <section class="agent-explainer">
+        <div>
+          <div class="eyebrow">What changes with WebMCP</div>
+          <h2>The agent does not have to guess its way through the interface.</h2>
+        </div>
+        <p>The page declares what it can safely do. ChatGPT can discover those tools, invoke them, and update this exact interface. The human can inspect, correct, or continue at any point.</p>
+      </section>
+
+      <section class="workspace" id="workspace">
+        <div class="workspace-copy">
+          <div class="eyebrow">Shared human + agent workspace</div>
+          <h2>Tell the website what the business needs.</h2>
+          <p>Change these values yourself or ask ChatGPT to use the page’s WebMCP tools. Both paths update the same recommendation state.</p>
+
+          <form id="intentForm" class="intent-form">
+            <label>Business name
+              <input id="businessName" name="businessName" placeholder="e.g. Northside Plumbing" maxlength="80" />
+            </label>
+            <label>Business type
+              <input id="businessType" name="businessType" placeholder="e.g. plumbing company" maxlength="100" />
+            </label>
+            <label>Primary goal
+              <select id="goal" name="goal">
+                <option value="leads">Generate qualified inquiries</option>
+                <option value="bookings">Turn visitors into bookings</option>
+                <option value="sales">Help visitors choose and buy</option>
+                <option value="guidance">Help visitors find the right next step</option>
+                <option value="owner_efficiency">Make the website easier to operate</option>
+              </select>
+            </label>
+            <div class="form-grid">
+              <label>Monthly budget (USD)
+                <input id="monthlyBudget" name="monthlyBudget" type="number" min="0" step="5" value="300" />
+              </label>
+              <label>Smart Apps needed
+                <select id="requestedApps" name="requestedApps">
+                  <option value="1">1</option>
+                  <option value="2" selected>2</option>
+                  <option value="3">3</option>
+                  <option value="4">4</option>
+                  <option value="5">5</option>
+                  <option value="6">6</option>
+                </select>
+              </label>
+            </div>
+            <label>How should the website be managed?
+              <select id="management" name="management">
+                <option value="done_for_me">I want it handled for me</option>
+                <option value="collaborative">I want to collaborate</option>
+                <option value="self_directed">I want more direct control</option>
+              </select>
+            </label>
+            <button class="button primary full" type="submit">Update recommendation</button>
+          </form>
+        </div>
+
+        <aside class="recommendation-panel" aria-live="polite">
+          <div class="panel-kicker">Current recommendation</div>
+          <div class="recommendation-head">
+            <div>
+              <div class="plan-name" id="recommendedPlan">Core</div>
+              <div class="plan-price" id="recommendedPrice">$295 <span>USD / month</span></div>
+            </div>
+            <span class="fit-chip" id="budgetFit">Within budget</span>
+          </div>
+          <p id="recommendationReason">Core is the smallest standard band for this direction.</p>
+          <div class="recommended-apps">
+            <div class="mini-label">Suggested capabilities</div>
+            <div id="suggestedApps" class="chip-row"></div>
+          </div>
+          <div class="next-step">
+            <div class="mini-label">Safe next step</div>
+            <strong>Prepare a private Smart Website direction.</strong>
+            <p>Review first. No payment. No public launch.</p>
+          </div>
+          <button class="button secondary full" id="prepareIntake" type="button">Prepare intake on this page</button>
+        </aside>
+      </section>
+
+      <section class="plans-section" id="plans">
+        <div class="section-heading">
+          <div>
+            <div class="eyebrow">Canonical public pricing</div>
+            <h2>One complete Smart Website. Three capability levels.</h2>
+          </div>
+          <a href="https://dmxready.com/pricing">Verify pricing on dmxready.com ↗</a>
+        </div>
+        <div class="plan-grid" id="planGrid"></div>
+      </section>
+
+      <section class="prepared-section" id="preparedSection" hidden>
+        <div class="prepared-icon">✓</div>
+        <div>
+          <div class="eyebrow">Prepared, not submitted</div>
+          <h2 id="preparedTitle">Your Smart Website direction is ready to review.</h2>
+          <p id="preparedSummary"></p>
+        </div>
+        <div class="boundary-card">
+          <strong>Human authority preserved</strong>
+          <span>No order created</span>
+          <span>No payment</span>
+          <span>No provisioning</span>
+          <span>No public launch</span>
+        </div>
+      </section>
+
+      <section class="activity-section">
+        <div>
+          <div class="eyebrow">Shared state evidence</div>
+          <h2>What changed on this page</h2>
+          <p>Human and agent actions appear in the same visible activity stream.</p>
+        </div>
+        <ol class="activity-log" id="activityLog" aria-live="polite"></ol>
+      </section>
+
+      <section class="tool-section">
+        <div class="section-heading">
+          <div>
+            <div class="eyebrow">Agent Ready capability projection</div>
+            <h2>Five bounded tools. Zero hidden authority.</h2>
+          </div>
+        </div>
+        <div class="tool-grid">
+          <article><code>dmxready.get_smart_website_options</code><span>Read current public plan options.</span></article>
+          <article><code>dmxready.set_visitor_intent</code><span>Update the same visible intent state.</span></article>
+          <article><code>dmxready.compare_relevant_plans</code><span>Recommend the smallest fitting band.</span></article>
+          <article><code>dmxready.show_recommended_path</code><span>Bring the shared recommendation into view.</span></article>
+          <article><code>dmxready.prepare_smart_website_intake</code><span>Prepare a review state only; never submit.</span></article>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <span>DMXReady Agent Ready · WebMCP reference proof</span>
+      <span>Built during the OpenAI WebMCP Challenge · August 2026</span>
+    </footer>
+  </div>
+  <script type="module" src="./app.js"></script>
+</body>
+</html>
