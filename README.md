@@ -10,6 +10,8 @@ DMXReady and its Smart Website platform existed before the challenge. The challe
 
 This is intentionally **not** the private DMXReady platform repository. It is a safe, standalone reference implementation containing only the code required to inspect and run the WebMCP proof.
 
+The public challenge repository demonstrates Agent Ready; it does not become a second DMXReady platform authority.
+
 ## The idea
 
 Normal AI website tooling often stops at “AI built this page” or adds a chatbot on top of it.
@@ -110,6 +112,8 @@ This reference demo contains no production credentials or customer data and perf
 
 - agent capability != unrestricted authority;
 - page state != owner-approved business truth;
+- preparation != submission;
+- preparation != ordering;
 - preparation != payment;
 - preparation != provisioning;
 - preparation != publication;
