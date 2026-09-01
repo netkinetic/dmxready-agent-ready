@@ -23,8 +23,8 @@ Deadline: **September 3, 2026 at 1:00 PM Pacific Time**.
 
 ## Finish before Thursday
 
-- [ ] verify the exact WebMCP interaction once in the supported ChatGPT/browser environment;
-- [ ] prepare optional public-safe gallery screenshots if useful;
+- [x] verify the exact WebMCP interaction once in the supported browser environment; see `ACCEPTANCE.md`;
+- [x] prepare public-safe gallery screenshots; see `assets/gallery/`;
 - [ ] prepare any architecture/B-roll frame used in the video;
 - [ ] save a Devpost draft with all non-video fields if practical;
 - [ ] verify no third-party copyrighted music/media will appear in the recording;
