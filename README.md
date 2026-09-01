@@ -136,3 +136,5 @@ MIT. See [LICENSE](./LICENSE).
 - [Demo video script](./DEMO_SCRIPT.md)
 
 The required public YouTube video is the only submission artifact not stored here yet.
+
+- [WebMCP browser acceptance](./ACCEPTANCE.md)
