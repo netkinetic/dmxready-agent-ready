@@ -129,6 +129,8 @@ MIT. See [LICENSE](./LICENSE).
 
 - [Agent Ready platform architecture](./ARCHITECTURE.md)
 - [Challenge judging map](./JUDGING.md)
+- [Final challenge checklist](./FINAL_CHECKLIST.md)
+- [Exact Devpost form values](./DEVPOST_FORM.md)
 - [Judge quick test](./TESTING.md)
 - [Devpost submission copy](./SUBMISSION.md)
 - [Demo video script](./DEMO_SCRIPT.md)
