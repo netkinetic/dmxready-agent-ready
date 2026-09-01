@@ -3,102 +3,57 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>DMXReady Agent Ready — Platform Proof</title>
-  <meta name="description" content="Public-safe architecture frames for the DMXReady Agent Ready WebMCP Challenge submission." />
+  <title>DMXReady Agent Ready — Challenge Concept</title>
+  <meta name="description" content="Public challenge concept for DMXReady Agent Ready." />
   <link rel="icon" href="./favicon.svg" type="image/svg+xml" />
   <link rel="stylesheet" href="./platform.css" />
 </head>
 <body>
   <header class="topbar">
     <a class="brand" href="./">DMX<span>Ready</span></a>
-    <div class="top-label">Agent Ready · Platform proof</div>
+    <div class="top-label">Agent Ready · Challenge concept</div>
   </header>
-
   <main>
-    <section class="frame frame-hero" id="platform">
-      <div class="eyebrow">THE AGENT-READY WEB PLATFORM</div>
-      <h1>One governed platform.<br><em>People and agents.</em></h1>
-      <p class="lede">Smart Websites can expose useful agent capabilities without creating a second website, a second business truth, or a hidden authority path.</p>
-      <div class="flow hero-flow" aria-label="Platform flow">
-        <div class="node primary">Business + website truth</div>
+    <section class="frame frame-hero">
+      <div class="eyebrow">THE AGENT-READY WEB</div>
+      <h1>One website.<br><em>People and agents.</em></h1>
+      <p class="lede">A website can remain a normal human experience while explicitly declaring useful, bounded capabilities to an AI agent through WebMCP.</p>
+      <div class="flow hero-flow" aria-label="Human and agent experience">
+        <div class="node primary">Human interface</div>
+        <div class="arrow">+</div>
+        <div class="node primary">WebMCP tools</div>
         <div class="arrow">→</div>
-        <div class="node primary">Smart Website + Smart Apps</div>
-        <div class="arrow">→</div>
-        <div class="node accent">Governed capability projection</div>
+        <div class="node accent">Same visible page</div>
       </div>
     </section>
-
-    <section class="frame" id="multi-tenant">
-      <div class="eyebrow">MULTI-TENANT BY DESIGN</div>
-      <h2>Different businesses.<br>Exact identities. Shared infrastructure.</h2>
-      <div class="tenant-grid">
-        <article class="tenant-card">
-          <span class="tenant-kicker">FIRST-PARTY DOGFOOD</span>
-          <strong>DMXReady</strong>
-          <p>Business platform experience with its own site truth and capabilities.</p>
-        </article>
-        <article class="tenant-card">
-          <span class="tenant-kicker">VERTICAL INTELLIGENCE</span>
-          <strong>Licensed Producers Canada</strong>
-          <p>Marketplace and industry-intelligence capabilities from governed domain data.</p>
-        </article>
-        <article class="tenant-card">
-          <span class="tenant-kicker">CUSTOMIZED EDITORIAL</span>
-          <strong>Soccer360 Magazine</strong>
-          <p>A visually distinct editorial experience without a separate platform runtime.</p>
-        </article>
-      </div>
-      <div class="contract-row">
-        <span>Exact site identity</span><span>Website-scoped resource</span><span>User + site authorization</span><span>Shared managed runtime</span>
-      </div>
-      <p class="note">These are production proof paths for the platform architecture. They are not fixture tenants embedded in this public reference repo.</p>
-    </section>
-
-    <section class="frame split" id="surfaces">
+    <section class="frame split">
       <div>
-        <div class="eyebrow">ONE CAPABILITY · TWO SURFACES</div>
-        <h2>A Smart App should not need separate human and agent business logic.</h2>
-        <p class="lede small">Both surfaces resolve to the same governed capability and data authority.</p>
+        <div class="eyebrow">VISIBLE COLLABORATION</div>
+        <h2>The agent acts through the website, not around it.</h2>
+        <p class="lede small">Tool calls update the same visible state the person can inspect and continue using.</p>
       </div>
       <div class="surface-diagram">
-        <div class="node accent wide">One Smart App capability</div>
-        <div class="branch">↙ <span>same authority</span> ↘</div>
-        <div class="surface-row">
-          <div class="surface-card"><span>HUMAN</span><strong>Website interface</strong></div>
-          <div class="surface-card"><span>AGENT</span><strong>WebMCP / MCP</strong></div>
-        </div>
-        <div class="same-data">Same data · Same execution authority · Same tenant boundary</div>
+        <div class="node accent wide">Five explicit WebMCP tools</div>
+        <div class="same-data">Structured inputs · Visible results · Normal browser fallback</div>
       </div>
     </section>
-
     <section class="frame" id="authority">
       <div class="eyebrow">CAPABILITY ≠ AUTHORITY</div>
-      <h2>The agent can discover what is possible.<br>The platform still decides what is allowed.</h2>
+      <h2>Useful assistance can still stop before consequential action.</h2>
       <div class="authority-flow">
-        <div class="step"><b>01</b><span>Discover capability</span></div>
-        <div class="step"><b>02</b><span>Resolve exact site + user</span></div>
-        <div class="step"><b>03</b><span>Execute governed action</span></div>
-        <div class="step"><b>04</b><span>Update visible state</span></div>
-        <div class="step"><b>05</b><span>Record Activity</span></div>
-        <div class="step guard"><b>06</b><span>Human approval when required</span></div>
+        <div class="step"><b>01</b><span>Read options</span></div>
+        <div class="step"><b>02</b><span>Set intent</span></div>
+        <div class="step"><b>03</b><span>Compare</span></div>
+        <div class="step"><b>04</b><span>Recommend</span></div>
+        <div class="step guard"><b>05</b><span>Prepare for human review</span></div>
       </div>
     </section>
-
-    <section class="frame frame-close" id="close">
+    <section class="frame frame-close">
       <div class="eyebrow">DMXREADY AGENT READY</div>
-      <h2>Build the business website once.<br><em>Let people and authorized agents use it together.</em></h2>
-      <p class="lede">The public WebMCP reference proves the browser interaction. The platform architecture makes that pattern reusable across many exact Smart Websites.</p>
-      <div class="closing-pills">
-        <span>Shared render model</span>
-        <span>Exact tenant authority</span>
-        <span>WebMCP</span>
-        <span>MCP / ChatGPT</span>
-        <span>Human control</span>
-      </div>
+      <h2>Build the website once.<br><em>Let people and authorized agents use it together.</em></h2>
       <a class="back" href="./">Open the live WebMCP proof →</a>
     </section>
   </main>
-
-  <footer>DMXReady Agent Ready · Public-safe challenge architecture · September 2026</footer>
+  <footer>DMXReady Agent Ready · Public WebMCP challenge reference · September 2026</footer>
 </body>
 </html>
