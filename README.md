@@ -1,6 +1,8 @@
 # DMXReady Agent Ready
 
-> **Smart Websites are websites built for people and AI agents to use together.**
+> **Websites are becoming interfaces for agents. DMXReady is the platform for building them.**
+>
+> Smart Websites are websites built for people and AI agents to use together.
 
 DMXReady Agent Ready is a small public WebMCP reference implementation created for the **OpenAI WebMCP Challenge (August–September 2026)**. It demonstrates a Smart Website exposing explicit browser tools to an AI agent while the person remains on the same page, sees the same state change, and keeps authority over consequential actions.
 
@@ -125,6 +127,8 @@ MIT. See [LICENSE](./LICENSE).
 
 ## Challenge submission package
 
+- [Agent Ready platform architecture](./ARCHITECTURE.md)
+- [Challenge judging map](./JUDGING.md)
 - [Judge quick test](./TESTING.md)
 - [Devpost submission copy](./SUBMISSION.md)
 - [Demo video script](./DEMO_SCRIPT.md)
