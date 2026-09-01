@@ -1,107 +1,85 @@
-# Devpost Submission Copy
+# DMXReady Agent Ready
 
-## Project name
-DMXReady Agent Ready
-
-## One-line pitch
 **Websites are becoming interfaces for agents. DMXReady is the platform for building them.**
 
-## Description
-DMXReady Agent Ready demonstrates a Smart Website that people and AI agents can use together from the same governed state. WebMCP gives the page explicit browser-native capabilities; DMXReady keeps business truth, permissions, consequential actions, and human-visible state under the same authority.
+## Inspiration
 
-The public challenge app is the safe, inspectable reference implementation. It also represents a larger product direction: one multi-tenant Smart Website platform can serve materially different businesses while each website keeps its own design, Smart Apps, protected identity, permissions, and agent capabilities.
+Most AI website work still follows one of two patterns: AI builds the page, or a chatbot is added on top of it. We wanted to explore a different question:
 
-Most AI website demos stop at “AI built this page” or add a chatbot on top. Agent Ready takes a different position:
+> What if the website itself could declare useful, structured capabilities to an AI agent while the person stayed on the same page, looking at the same state, and remained in control of consequential actions?
 
-> **The website itself should become a governed interface for both people and AI agents.**
+That is the idea behind **DMXReady Agent Ready**.
 
-## What the live WebMCP demo proves
+## What it does
 
-The page exposes five bounded WebMCP tools. An agent can read plans, capture visitor intent, compare relevant options, bring the recommendation into view, and prepare a Smart Website direction for human review.
+The public challenge app is a working Smart Website planning experience with five browser-native WebMCP tools. An agent can:
 
-Every agent action calls the same application behavior that updates the person-visible page. There is no hidden agent-only state and no unrestricted automation back door.
+1. read the Smart Website options shown by the page;
+2. set the visitor's business intent;
+3. compare the relevant plans;
+4. bring the recommendation into view; and
+5. prepare a Smart Website direction for human review.
 
-The final tool deliberately stops at **Prepared, not submitted**. It cannot create an order, charge money, provision a website, publish, change DNS, send outbound communication, or approve launch.
+The important part is not the five tools by themselves. Every tool calls the same application behavior that updates the person-visible website. The recommendation, plan highlight, prepared state, and Activity trail all change on the same page the person is using.
 
-That boundary is intentional: WebMCP gives the agent useful capability without silently replacing business authority.
+## Why WebMCP matters
 
-## The platform idea
+Without WebMCP, an agent has to infer intent from buttons, labels, forms, and page structure. WebMCP lets the website explicitly say what the agent can do and describe those capabilities with structured JSON schemas.
 
-```text
-one governed business / website truth
-        ↓
-Smart Website + Smart Apps
-        ↓
-governed capability projection
-   ┌─────────────┼─────────────┐
-   ↓             ↓             ↓
-human UI       WebMCP       MCP / agents
-        ↓
-exact authority + Activity evidence
-```
+That changes the interaction model:
 
-A Smart Website can have a unique design and business model while still using shared platform runtime and Agent Ready contracts. Capabilities can be scoped by website, Smart App, current state, and authorization rather than exposed as one unrestricted static API.
+- the website exposes bounded capabilities instead of forcing the agent to scrape UI;
+- the agent invokes the same business logic the human experience uses;
+- the person can immediately see what changed;
+- the page can keep normal human behavior when WebMCP is unavailable; and
+- the website's existing authority rules still decide what is allowed.
 
-A Smart App can also be dual-surface: the same governed capability that powers a human experience can be exposed to an agent without creating a second business-logic or data authority.
+The live challenge page registers its tools with `document.modelContext.registerTool()`, uses explicit schemas, bounded inputs, an `AbortSignal`, and fail-closed registration behavior.
 
-## Multi-tenant proof
+## Human authority is part of the product
 
-The broader DMXReady North Star has been exercised across materially different Smart Website cases:
+The final WebMCP tool deliberately stops at **Prepared, not submitted**.
 
-- **DMXReady** — the platform's own business/marketing Smart Website;
-- **Licensed Producers Canada** — a domain-rich Smart Marketplace / industry-intelligence experience with a governed agent-readable Marketplace capability;
-- **Soccer360 Magazine** — a highly customized editorial experience using the ordinary Smart Website platform model.
+It does **not** create an order, charge money, provision a website, publish, change DNS, send outbound communication, or approve launch. The result requires human review.
 
-The point is not that these websites look alike. They do not. The point is that they can share the same governed Smart Website and Agent Ready architecture without sharing tenant truth, permissions, design, or business capabilities.
+That boundary is intentional. Agent capability should not silently become agent authority.
 
-The challenge repository contains only the public-safe WebMCP reference implementation and no private platform source, production credentials, or customer data.
+## From one demo to a multi-tenant platform
 
-## Why WebMCP is the right fit
+The public app is deliberately small and inspectable, but it represents a larger DMXReady product direction.
 
-Without WebMCP, an agent has to infer intent from layout, buttons, labels, and forms. WebMCP lets the website declare structured capabilities directly.
+A Smart Website can have its own business understanding, design, Smart Apps, identity, permissions, and agent capabilities while sharing a managed platform runtime. We have exercised that architecture across materially different Smart Website cases, including DMXReady itself, Licensed Producers Canada, and Soccer360 Magazine.
 
-That creates a stronger human-agent model:
+The point is not that those websites look alike. They do not. The point is that an Agent Ready platform can keep each site's truth and authority isolated while reusing the same underlying lifecycle and capability model.
 
-1. the page says what the agent may safely do;
-2. the agent invokes explicit JSON-schema tools;
-3. the same application functions update the same page state;
-4. the human can see what changed;
-5. consequential actions remain behind the existing authority boundary.
+A Smart App can also become **dual-surface**: one governed capability can power a human interface and an agent interface without creating a second business-logic or data authority.
 
-The normal human interface continues to work when WebMCP is unavailable.
+The public challenge repository contains only the challenge-safe reference implementation, tests, documentation, and visual architecture proof. It does not contain private platform source, production credentials, or customer-private data.
 
-## Reference implementation
+## How we built it
 
-The page registers five tools with `document.modelContext.registerTool()`:
+We kept the reference implementation intentionally transparent: HTML, CSS, JavaScript, Node's test runner, and GitHub Pages.
 
-- `dmxready.get_smart_website_options`
-- `dmxready.set_visitor_intent`
-- `dmxready.compare_relevant_plans`
-- `dmxready.show_recommended_path`
-- `dmxready.prepare_smart_website_intake`
+The WebMCP layer is thin. The page already has application functions for normalizing visitor intent, recommending a plan, updating visible state, and preparing a non-consequential review state. The registered WebMCP tools call those same functions rather than creating a parallel agent backend.
 
-Registrations use explicit JSON input schemas, bounded inputs, shared application functions, an `AbortSignal`, and fail-closed registration behavior.
+## Challenges we ran into
 
-## Challenge-period work
+The hardest problem was not registering tools. It was deciding what a trustworthy human-agent website should mean.
 
-DMXReady existed before the challenge. The public Agent Ready reference implementation was created after August 25, 2026.
+We had to avoid hidden agent-only state, make tool calls visibly change the same page, preserve a useful experience in browsers without WebMCP, and draw a clear line between preparing something and authorizing a consequential business action.
 
-Challenge-period work includes the public reference app, WebMCP capability projection, five browser tools, shared human/agent page state, visible Activity evidence, a safe preparation-before-consequence boundary, tests, judge instructions, public licensed source, and the live demo.
+We also had to keep the challenge-period work explicit because DMXReady existed before this challenge. The WebMCP reference app, browser capability projection, shared human/agent state, Activity evidence, tests, judge instructions, and public proof package are the challenge-period extension; the pre-existing private Smart Website platform is not part of that claim.
 
-The challenge did not create DMXReady's pre-existing Smart Website, Smart App, business-intelligence, publication, or managed-runtime platform.
+## What we learned
+
+WebMCP is most interesting when it is not treated as another API surface bolted onto a website.
+
+The stronger pattern is to expose the website's existing application capabilities directly, scoped to the page, business, Smart App, current state, and authorization. That keeps human and agent experiences consistent and makes agent activity easier to understand and govern.
+
+Our live Chrome 152 acceptance exercised all five registered tools against the deployed page. The flow resolved a plumbing-company use case to the Core plan at $295/month, updated the shared visible state and Activity trail, and ended with `prepared_not_submitted`, `paymentCreated=false`, and `publicationAllowed=false`.
 
 ## Why it matters
 
-The longer-term implication is larger than this buying-flow demo. A platform that creates Smart Websites can also create their governed agent affordances. Instead of manually adding a separate chatbot or bespoke agent API to every customer site, Agent Ready makes agent access part of the website architecture itself.
+Today this is a focused reference journey. The larger opportunity is for platforms that create websites to create their governed agent affordances at the same time.
 
-> **Build once. Let people and authorized agents use the same governed business capabilities.**
-
-## Links
-- Live app: https://netkinetic.github.io/dmxready-agent-ready/
-- Public source: https://github.com/netkinetic/dmxready-agent-ready
-- Architecture: `ARCHITECTURE.md`
-- Judging map: `JUDGING.md`
-- Demo video: **add public YouTube URL on Thursday before submission**
-
-## Thursday rule
-Everything except the final public video URL should be complete before Thursday. Thursday is reserved for exact-release sanity checking, recording, YouTube upload, inserting the video URL, and final submission verification—not new product development.
+**Build the business website once. Let people and authorized agents use the same governed capabilities.**
