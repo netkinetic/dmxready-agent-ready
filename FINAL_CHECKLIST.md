@@ -26,7 +26,11 @@ Deadline: **September 3, 2026 at 1:00 PM Pacific Time**.
 - [x] verify the exact WebMCP interaction once in the supported browser environment; see `ACCEPTANCE.md`;
 - [x] prepare public-safe gallery screenshots; see `assets/gallery/`;
 - [x] prepare the architecture/B-roll page used in the video: `platform.html`;
-- [ ] save a Devpost draft with all non-video fields if practical;
+- [x] Devpost registration is complete and draft `1165533` exists;
+- [x] Project Overview is saved with title, elevator pitch, and 3:2 thumbnail;
+- [x] Project Details description, tags, live/source links, and four captioned public-safe gallery images are saved; video is intentionally blank;
+- [x] judge-only Additional info is saved with exact Existing-project delta, live URL, repo, test path, and eligibility metadata;
+- [x] finalization was inspected; only the video-dependent Project Details step plus final owner rules/terms attestation remain;
 - [x] lock recording to spoken audio only; no third-party music/media;
 - [x] lock platform visuals to the public-safe `platform.html` tenant cards; no private tenant UI;
 - [x] confirm the locked gallery/B-roll visuals contain no private URLs, credentials, OAuth codes, or customer-private data.
@@ -40,6 +44,8 @@ Deadline: **September 3, 2026 at 1:00 PM Pacific Time**.
 - [ ] keep the video under three minutes;
 - [ ] upload the video publicly to YouTube;
 - [ ] add the YouTube URL to Devpost and `SUBMISSION.md`;
+- [ ] confirm Devpost Project Details changes from incomplete to complete;
 - [ ] verify live app, repo, license, description, testing instructions, and video;
+- [ ] owner checks the final Devpost Official Rules / Terms attestation;
 - [ ] submit before the deadline;
 - [ ] freeze the submitted repo and live site during judging.

@@ -131,6 +131,7 @@ MIT. See [LICENSE](./LICENSE).
 - [Challenge judging map](./JUDGING.md)
 - [Final challenge checklist](./FINAL_CHECKLIST.md)
 - [Exact Devpost form values](./DEVPOST_FORM.md)
+- [Devpost draft receipt](./DEVPOST_DRAFT.md)
 - [Judge quick test](./TESTING.md)
 - [Devpost submission copy](./SUBMISSION.md)
 - [Demo video script](./DEMO_SCRIPT.md)
