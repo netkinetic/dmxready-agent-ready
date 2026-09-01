@@ -44,6 +44,7 @@ Optional, but prepare these if the form allows images:
 1. clean Agent Ready hero showing `5 WebMCP tools available`;
 2. human + agent shared-state result with Core recommendation and Activity;
 3. `Prepared, not submitted` authority boundary;
-4. one simple platform architecture frame showing human UI / WebMCP / MCP-agent consumers.
+4. `assets/gallery/03-multi-tenant-platform.png` for the multi-tenant platform story;
+5. `assets/gallery/04-smart-app-dual-surface.png` for one-capability / two-surfaces proof.
 
 Do not include private Workspace data, credentials, OAuth codes, private source, or non-public customer information.

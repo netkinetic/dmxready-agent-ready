@@ -134,7 +134,7 @@ MIT. See [LICENSE](./LICENSE).
 - [Judge quick test](./TESTING.md)
 - [Devpost submission copy](./SUBMISSION.md)
 - [Demo video script](./DEMO_SCRIPT.md)
+- [WebMCP browser acceptance](./ACCEPTANCE.md)
+- [Public platform B-roll](./platform.html)
 
 The required public YouTube video is the only submission artifact not stored here yet.
-
-- [WebMCP browser acceptance](./ACCEPTANCE.md)
