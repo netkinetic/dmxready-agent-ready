@@ -41,6 +41,6 @@ Keep only public proof that directly helps judging:
 1. `assets/gallery/01-webmcp-ready.png` — five WebMCP tools available;
 2. `assets/gallery/02-shared-state-human-authority.png` — visible recommendation, Activity, and prepared-not-submitted boundary.
 
-Remove architecture-focused gallery material that is not needed to evaluate this challenge entry.
+Do not re-add architecture-focused gallery material that is not needed to evaluate this challenge entry.
 
 Do not include private Workspace data, customer information, credentials, production architecture, OAuth details, or internal implementation material.

@@ -26,7 +26,7 @@ Deadline: **September 3, 2026 at 1:00 PM Pacific Time**.
 
 ## Before final submission
 
-- [ ] update the live Devpost draft to remove the two architecture gallery items and platform-proof copy/link;
+- [x] live Devpost draft uses the protected `SUBMISSION.md` copy, two evidence-only gallery items, and no platform-proof link;
 - [ ] recheck exact live URL and public commit;
 - [ ] confirm five WebMCP tools discover from a clean state;
 - [ ] run the complete scripted interaction once;

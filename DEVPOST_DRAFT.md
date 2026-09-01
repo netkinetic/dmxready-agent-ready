@@ -19,7 +19,7 @@ The WebMCP Challenge Devpost draft exists and remains intentionally unsubmitted 
 
 ## Competitive-disclosure correction
 
-The final Devpost draft should contain only the information required to judge the challenge work.
+The live Devpost draft now contains only the information required to judge the challenge work.
 
 Keep:
 
@@ -28,10 +28,12 @@ Keep:
 3. the challenge-period delta;
 4. live URL, source URL, testing instructions, and browser acceptance evidence.
 
-Remove from the Devpost draft:
+Completed on September 1, 2026:
 
-- architecture-focused gallery material that is not needed to judge the WebMCP experience;
-- any separate copy or link that explains private implementation details beyond what the challenge requires.
+- replaced the public About-the-project copy with `SUBMISSION.md`;
+- removed the two architecture-focused gallery items;
+- removed the separate `platform.html` Try-it-out link;
+- verified the public preview contains exactly two gallery items and only the live app plus public GitHub repo as project links.
 
 ## Thursday owner gate
 
