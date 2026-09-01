@@ -105,27 +105,6 @@ em { color: var(--gold); font-style: normal; }
   text-align: center;
   font-size: 22px;
 }
-.tenant-grid {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 18px;
-  margin-top: 56px;
-}
-.tenant-card {
-  min-height: 250px;
-  padding: 28px;
-  border: 1px solid var(--line);
-  border-radius: 22px;
-  background: linear-gradient(145deg, var(--panel-2), var(--panel));
-}
-.tenant-card strong {
-  display: block;
-  margin: 16px 0;
-  font-size: 28px;
-  letter-spacing: -.03em;
-}
-.tenant-card p { color: var(--muted); line-height: 1.5; }
-.tenant-kicker { color: var(--gold); font-size: 11px; font-weight: 900; letter-spacing: .14em; }
 .contract-row {
   display: flex;
   flex-wrap: wrap;
@@ -232,8 +211,7 @@ footer {
   .hero-flow { grid-template-columns: 1fr; }
   .hero-flow .arrow { transform: rotate(90deg); }
   .frame { min-height: auto; padding-top: 90px; padding-bottom: 90px; }
-  .tenant-grid, .split, .authority-flow { grid-template-columns: 1fr; }
-  .tenant-card { min-height: auto; }
+  .split, .authority-flow { grid-template-columns: 1fr; }
   .split { gap: 44px; }
 }
 

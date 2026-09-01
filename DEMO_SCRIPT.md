@@ -1,44 +1,30 @@
-# Demo Video Script — target 2:40–2:50
+# Demo Video Script — target 2:05–2:25
 
 ## Recording rule
 
-Record on Thursday only, after every non-video submission artifact is final.
-
-Use the latest stable certified public challenge release. Do not introduce product changes during recording day unless the public demo is genuinely broken.
-
-Do not expose private source, credentials, customer-private data, OAuth codes, or internal admin details.
-
-## Exact recording start
-
-1. Open the live public WebMCP reference at <https://netkinetic.github.io/dmxready-agent-ready/> in the supported WebMCP environment.
-2. Use a desktop viewport at 1280×720 or larger with both the page and ChatGPT interaction legible.
-3. Reload immediately before the take and begin from a clean state.
-4. Confirm `5 WebMCP tools available` and the expected default Core recommendation.
-5. Stop and reset if tool discovery is missing, stale state remains, or any tool produces an unexpected result.
+Record only after the public challenge artifact is stable. Do not expose private source, customer data, credentials, OAuth details, internal admin screens, or production architecture.
 
 ## 0:00–0:18 — The thesis
 
 **Voiceover:** “Websites are becoming interfaces for agents. DMXReady is a platform for building Smart Websites that people and AI agents can use together.”
 
-Show the normal usable website first. Briefly point to the WebMCP availability indicator.
+Show the normal live website first and the WebMCP availability indicator.
 
-## 0:18–0:38 — The WebMCP layer
+## 0:18–0:38 — Explicit capabilities
 
-Scroll to the capability section.
+Show the capability section.
 
-**Voiceover:** “Instead of making an agent guess its way through buttons and forms, this page declares five explicit WebMCP tools. They use the same application behavior as the human interface.”
+**Voiceover:** “Instead of making an agent guess its way through buttons and forms, this page declares five explicit WebMCP tools with structured inputs. The normal website still works for the person.”
 
-Do not dwell on code. The visual proof is the website and the available capabilities.
+Do not show architecture diagrams or private platform material.
 
-## 0:38–1:25 — Human + agent, same state
+## 0:38–1:28 — Human + agent, same visible experience
 
 Use this exact prompt:
 
 > I run a plumbing company. I mainly want more qualified leads, I want the website handled for me, I need about two Smart Apps, and I want to stay around $300 per month. Use this page's WebMCP tools to read the options, set my intent, compare the relevant plans, show the recommended path, and prepare it for review only, in that order.
 
-Show the agent executing the tools while the person-visible page updates.
-
-Expected sequence:
+Expected tool sequence:
 
 1. `dmxready.get_smart_website_options`
 2. `dmxready.set_visitor_intent`
@@ -46,49 +32,31 @@ Expected sequence:
 4. `dmxready.show_recommended_path`
 5. `dmxready.prepare_smart_website_intake`
 
-The visible result should remain Core at `$295 USD / month`, `Within budget`, with the prepared review section revealed and Activity showing the agent interactions.
+Show the page changing while the tools run. The visible result should remain Core at `$295 USD / month`, `Within budget`, with the prepared review section revealed and Activity showing the interactions.
 
-**Voiceover:** “The agent is not using a second hidden website model. Its tool calls update the same page state the person can see and continue using.”
+**Voiceover:** “The important part is what happens on the website. The agent's actions change the same visible state the person is using, so the person can see the result and continue from it.”
 
-## 1:25–1:48 — Human authority
+## 1:28–1:52 — Human authority
 
 Show `Prepared, not submitted` and the consequence boundary.
 
-**Voiceover:** “Useful capability does not mean unrestricted authority. The agent can prepare the direction, but it cannot create an order, charge money, provision a website, publish, change DNS, or approve launch. The human keeps that authority.”
+**Voiceover:** “Useful capability does not mean unrestricted authority. This reference can prepare the direction, but it cannot create an order, charge money, provision a site, publish, change DNS, or approve launch.”
 
-Hold long enough for the safety boundary and Activity evidence to be readable.
+## 1:52–2:15 — Why it matters
 
-## 1:48–2:18 — From demo to platform
+Return to the hero and Activity/result state.
 
-Open the public-safe platform B-roll page at `https://netkinetic.github.io/dmxready-agent-ready/platform.html` and hold on the **Multi-tenant by design** frame. It names DMXReady, Licensed Producers Canada, and Soccer360 Magazine as distinct production proof paths without showing private tenant UI.
+**Voiceover:** “This is the shift we wanted to demonstrate: not AI building a website, and not another chatbot layered on top. The website itself becomes an explicit interface for people and agents. Build the website once. Let people and authorized agents use it together.”
 
-**Voiceover:** “The bigger idea is multi-tenant. These sites can have completely different designs, business models, and Smart Apps while sharing one governed Smart Website and Agent Ready architecture. Each site keeps its own identity, permissions, and capabilities.”
+## Final capture checklist
 
-Do not imply that the public reference repo contains the private production platform. Label this clearly as **DMXReady platform proof / challenge architecture**.
-
-## 2:18–2:38 — Smart Apps, two surfaces
-
-On the same public B-roll page, scroll to **One capability · two surfaces**. Show the Smart App capability branching to the human website interface and the WebMCP / MCP agent interface.
-
-**Voiceover:** “A Smart App does not need separate human and agent business logic. The same governed capability can power the website experience and an agent surface, with the same data and authority boundaries.”
-
-Do not add private LPC, Soccer360, Workspace, OAuth, or admin screenshots to the final video. The public B-roll page is the locked architecture visual.
-
-## 2:38–2:48 — Close
-
-Return to the Agent Ready hero or final architecture frame.
-
-**Voiceover:** “Build the business website once. Let people and authorized agents use the same governed capabilities. That is DMXReady Agent Ready.”
-
-## Thursday capture checklist
-
-- exact live URL passes before recording;
-- five WebMCP tools discover correctly;
-- clean initial state;
-- full agent sequence succeeds once before the recorded take;
-- architecture/B-roll assets already prepared;
-- export remains below 3:00 with spoken audio;
-- upload public on YouTube;
-- replace only the video placeholder in `SUBMISSION.md`;
-- verify live URL, public repo, license, testing instructions, and video after upload;
-- submit and freeze the challenge artifact.
+- live URL passes immediately before recording;
+- five tools discover from a clean state;
+- full scripted interaction succeeds;
+- spoken audio only; no third-party music;
+- no architecture/B-roll page in the final video;
+- no private tenant, Workspace, OAuth, admin, or source screenshots;
+- final video remains below three minutes;
+- upload publicly to YouTube;
+- add the URL to Devpost and `SUBMISSION.md`;
+- freeze the submitted repo/live site after the deadline through judging.

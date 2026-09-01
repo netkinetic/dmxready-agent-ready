@@ -2,50 +2,39 @@
 
 Deadline: **September 3, 2026 at 1:00 PM Pacific Time**.
 
-## Already required before Thursday
+## Submission requirements
 
 - [x] public repository exists;
-- [x] repository is public;
-- [x] MIT license is detected by GitHub;
-- [x] live GitHub Pages URL exists;
-- [x] live URL returns successfully;
-- [x] source contains `document.modelContext.registerTool(...)` WebMCP implementation;
-- [x] run instructions exist;
-- [x] judge testing instructions exist;
-- [x] challenge-period delta from pre-existing DMXReady is documented;
-- [x] Devpost submission copy is prepared;
-- [x] architecture explanation is prepared;
-- [x] judging-criteria map is prepared;
-- [x] final <3 minute video script is prepared;
-- [x] test suite passes;
-- [x] static checks pass;
-- [x] current Pages deployment succeeds.
+- [x] MIT license is present;
+- [x] working public live URL exists;
+- [x] source contains the WebMCP `document.modelContext.registerTool(...)` implementation;
+- [x] run and testing instructions exist;
+- [x] challenge-period delta from pre-existing DMXReady is explicit;
+- [x] submission copy is prepared;
+- [x] judging map is prepared;
+- [x] browser acceptance is recorded;
+- [x] tests and static checks have passed.
 
-## Finish before Thursday
+## Competitive-disclosure gate
 
-- [x] verify the exact WebMCP interaction once in the supported browser environment; see `ACCEPTANCE.md`;
-- [x] prepare public-safe gallery screenshots; see `assets/gallery/`;
-- [x] prepare the architecture/B-roll page used in the video: `platform.html`;
-- [x] Devpost registration is complete and draft `1165533` exists;
-- [x] Project Overview is saved with title, elevator pitch, and 3:2 thumbnail;
-- [x] Project Details description, tags, live/source links, and four captioned public-safe gallery images are saved; video is intentionally blank;
-- [x] judge-only Additional info is saved with exact Existing-project delta, live URL, repo, test path, and eligibility metadata;
-- [x] finalization was inspected; only the video-dependent Project Details step plus final owner rules/terms attestation remain;
-- [x] lock recording to spoken audio only; no third-party music/media;
-- [x] lock platform visuals to the public-safe `platform.html` tenant cards; no private tenant UI;
-- [x] confirm the locked gallery/B-roll visuals contain no private URLs, credentials, OAuth codes, or customer-private data.
+- [x] public submission explains the product experience, not the private production architecture;
+- [x] architecture document is limited to the public reference implementation;
+- [x] video script is limited to the working WebMCP experience;
+- [x] Devpost media is limited to evidence needed for judging;
+- [x] optional concept page contains only public challenge-level product messaging;
+- [x] no private source, credentials, customer data, OAuth details, internal admin information, or production implementation is required for judging.
 
-## Thursday only
+## Before final submission
 
-- [ ] recheck live URL and exact public commit;
+- [ ] update the live Devpost draft to remove the two architecture gallery items and platform-proof copy/link;
+- [ ] recheck exact live URL and public commit;
 - [ ] confirm five WebMCP tools discover from a clean state;
 - [ ] run the complete scripted interaction once;
-- [ ] record the final video with spoken audio;
+- [ ] record the final spoken-audio video;
 - [ ] keep the video under three minutes;
 - [ ] upload the video publicly to YouTube;
 - [ ] add the YouTube URL to Devpost and `SUBMISSION.md`;
-- [ ] confirm Devpost Project Details changes from incomplete to complete;
 - [ ] verify live app, repo, license, description, testing instructions, and video;
-- [ ] owner checks the final Devpost Official Rules / Terms attestation;
+- [ ] owner reviews and accepts the Official Rules / Devpost Terms;
 - [ ] submit before the deadline;
 - [ ] freeze the submitted repo and live site during judging.
