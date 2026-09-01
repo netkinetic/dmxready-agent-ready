@@ -60,7 +60,7 @@ Hold long enough for the safety boundary and Activity evidence to be readable.
 
 ## 1:48–2:18 — From demo to platform
 
-Use a prepared public-safe architecture frame and quick visual cuts of materially different Smart Website experiences where stable and safe to show: DMXReady, Licensed Producers Canada, and Soccer360 Magazine.
+Open the public-safe platform B-roll page at `https://netkinetic.github.io/dmxready-agent-ready/platform.html` and hold on the **Multi-tenant by design** frame. It names DMXReady, Licensed Producers Canada, and Soccer360 Magazine as distinct production proof paths without showing private tenant UI.
 
 **Voiceover:** “The bigger idea is multi-tenant. These sites can have completely different designs, business models, and Smart Apps while sharing one governed Smart Website and Agent Ready architecture. Each site keeps its own identity, permissions, and capabilities.”
 
@@ -68,17 +68,11 @@ Do not imply that the public reference repo contains the private production plat
 
 ## 2:18–2:38 — Smart Apps, two surfaces
 
-Show the architecture frame:
-
-```text
-one Smart App capability
-        ├── human interface
-        └── agent interface
-```
+On the same public B-roll page, scroll to **One capability · two surfaces**. Show the Smart App capability branching to the human website interface and the WebMCP / MCP agent interface.
 
 **Voiceover:** “A Smart App does not need separate human and agent business logic. The same governed capability can power the website experience and an agent surface, with the same data and authority boundaries.”
 
-If a current public-safe LPC Marketplace proof is included, keep it to a very short visual confirmation rather than a second long tool sequence.
+Do not add private LPC, Soccer360, Workspace, OAuth, or admin screenshots to the final video. The public B-roll page is the locked architecture visual.
 
 ## 2:38–2:48 — Close
 

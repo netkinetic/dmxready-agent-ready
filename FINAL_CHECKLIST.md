@@ -25,11 +25,11 @@ Deadline: **September 3, 2026 at 1:00 PM Pacific Time**.
 
 - [x] verify the exact WebMCP interaction once in the supported browser environment; see `ACCEPTANCE.md`;
 - [x] prepare public-safe gallery screenshots; see `assets/gallery/`;
-- [ ] prepare any architecture/B-roll frame used in the video;
+- [x] prepare the architecture/B-roll page used in the video: `platform.html`;
 - [ ] save a Devpost draft with all non-video fields if practical;
-- [ ] verify no third-party copyrighted music/media will appear in the recording;
-- [ ] decide the exact stable DMXReady/LPC/Soccer360 platform visuals, if any, used as short context shots;
-- [ ] confirm those visuals reveal no private or sensitive information.
+- [x] lock recording to spoken audio only; no third-party music/media;
+- [x] lock platform visuals to the public-safe `platform.html` tenant cards; no private tenant UI;
+- [x] confirm the locked gallery/B-roll visuals contain no private URLs, credentials, OAuth codes, or customer-private data.
 
 ## Thursday only
 
