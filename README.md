@@ -1,5 +1,9 @@
 # DMXReady Agent Ready
 
+> **Historical WebMCP Challenge reference — not current DMXReady product or commercial authority.**
+>
+> For current DMXReady product direction use the private platform Product Truth and the live public site. This repository preserves the August–September 2026 challenge implementation and judging evidence.
+
 > **Websites are becoming interfaces for agents. DMXReady is the platform for building them.**
 >
 > Smart Websites are websites built for people and AI agents to use together.
@@ -38,7 +42,7 @@ The page exposes five bounded tools:
 
 The final tool prepares a visible review state only. It does **not** submit an intake, create an order, charge money, provision a website, or approve a public launch.
 
-## Current pricing reference
+## Challenge-period pricing snapshot
 
 | Plan | USD / month | Smart Apps |
 | --- | ---: | ---: |
@@ -46,7 +50,7 @@ The final tool prepares a visible review state only. It does **not** submit an i
 | Plus | $395 | up to 4 |
 | Advanced | $495 | up to 6 |
 
-The live commercial reference is <https://dmxready.com/pricing>.
+These values are preserved because they were part of the challenge artifact. They must not be treated as durable current pricing authority. Use <https://dmxready.com/pricing> and current canonical product/commercial authority for present-day decisions.
 
 ## WebMCP implementation
 
@@ -115,4 +119,4 @@ MIT. See [LICENSE](./LICENSE).
 - [WebMCP browser acceptance](./ACCEPTANCE.md)
 - [Public challenge concept](./platform.html)
 
-The required public YouTube video is the remaining submission artifact.
+This checklist sentence is preserved as challenge-period history. Current DMXReady product/release work is tracked outside this frozen reference repository.
